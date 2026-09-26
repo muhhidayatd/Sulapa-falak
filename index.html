@@ -1,0 +1,229 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="theme-color" content="#06140f">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<title>Sulapa Falak — UI/UX Screens</title>
+<style>
+:root{--bg:#06140f;--s:#0c2118;--s2:#123326;--g:#d9b66f;--g2:#f4d995;--c:#f5efdf;--m:#a6b5ab;--l:#25463a}
+*{box-sizing:border-box}body{margin:0;background:#020806;color:var(--c);font-family:Inter,system-ui,sans-serif}.app{width:min(430px,100vw);min-height:100vh;margin:auto;background:radial-gradient(circle at 85% 4%,rgba(217,182,111,.11),transparent 25%),var(--bg)}.screen{min-height:100vh;padding:22px 19px 105px}.hidden{display:none!important}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.brand{display:flex;align-items:center;gap:10px}.logo{object-fit:contain;filter:drop-shadow(0 6px 16px rgba(217,182,111,.2))}.small{width:48px;height:48px}.large{width:210px;height:210px;margin:auto}.eyebrow{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--g)}.title{font-size:27px;line-height:1.1;margin:0;font-weight:760}.sub{font-size:12px;color:var(--m);line-height:1.5}.card{background:linear-gradient(145deg,rgba(18,51,38,.97),rgba(7,26,19,.98));border:1px solid var(--l);border-radius:24px;padding:18px;margin-bottom:13px;box-shadow:0 18px 55px rgba(0,0,0,.28)}.badge{font-size:9px;padding:5px 8px;border-radius:99px;color:var(--g2);border:1px solid #5c4a2a}.hero{min-height:230px;position:relative;overflow:hidden}.moon{position:absolute;right:12px;top:6px;font-size:74px;color:var(--g2);opacity:.8}.clock{font-size:48px;font-weight:300;letter-spacing:-2px}.location{font-size:12px;color:var(--g2);margin-top:5px}.next{display:flex;justify-content:space-between;align-items:end;margin-top:26px}.next b{display:block;font-size:22px;margin-top:3px}.count{font-size:12px;color:var(--m)}.prayers{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.prayer{padding:11px 3px;text-align:center;background:#0a1d16;border:1px solid #1b3a2e;border-radius:15px}.prayer.active{border-color:var(--g);background:rgba(217,182,111,.09)}.prayer span{display:block;font-size:9px;color:var(--m)}.prayer b{font-size:12px}.section{display:flex;justify-content:space-between;align-items:center;margin:20px 2px 10px}.section h3{font-size:16px;margin:0}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:11px}.tile{min-height:125px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer}.icon{font-size:24px;color:var(--g)}.tile b{font-size:15px}.tile p{font-size:10px;color:var(--m);margin:4px 0}.btn{width:100%;padding:14px;border-radius:16px;border:1px solid var(--g);background:linear-gradient(135deg,#e0be74,#a57c37);color:#0b1a13;font-weight:800}.list{display:flex;flex-direction:column;gap:8px}.row{display:flex;justify-content:space-between;align-items:center;padding:14px;border-radius:17px;background:#0a1e17;border:1px solid #1b3a2e}.row.active{border-color:var(--g);background:rgba(217,182,111,.08)}.left{display:flex;gap:11px;align-items:center}.ico{color:var(--g);width:27px;text-align:center}.row small{display:block;color:var(--m);font-size:10px;margin-top:2px}.bottom{position:fixed;bottom:0;width:min(430px,100vw);height:78px;background:rgba(4,15,11,.95);backdrop-filter:blur(18px);border-top:1px solid var(--l);display:grid;grid-template-columns:repeat(5,1fr);z-index:50}.nav{border:0;background:none;color:#81958a;font-size:9px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}.nav i{font-style:normal;font-size:20px}.nav.active{color:var(--g)}.qibla{height:315px;display:grid;place-items:center}.compass{width:225px;height:225px;border:1px solid var(--g);border-radius:50%;background:radial-gradient(circle,#173d2d,#071812);position:relative;display:grid;place-items:center}.compass:before{content:"N";position:absolute;top:9px;color:var(--g);font-weight:800}.needle{position:absolute;width:3px;height:86px;background:var(--g);top:31px;border-radius:4px;transform:rotate(34deg);transform-origin:50% 78%}.kaaba{width:58px;height:58px;border-radius:16px;background:#030605;border:2px solid var(--g);display:grid;place-items:center;color:var(--g);font-size:25px}.center{text-align:center}.deg strong,.result{font-size:35px;color:var(--g2)}.calendar-head{display:flex;justify-content:space-between;align-items:center}.month{text-align:center}.month strong{display:block;font-size:18px}.month small{color:var(--m);font-size:10px}.month-btn{width:38px;height:38px;border:1px solid var(--l);border-radius:13px;background:#0a1e17;color:var(--g);font-size:20px}.calgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-top:15px}.weekday{text-align:center;color:var(--m);font-size:9px;padding:5px}.day{min-height:50px;border-radius:13px;background:#0a1e17;border:1px solid transparent;padding:6px;text-align:center}.day.today{border-color:var(--g);background:rgba(217,182,111,.1)}.day .m{font-size:13px;font-weight:700}.day .h{font-size:8px;color:var(--m);margin-top:3px}.hijri{font-size:29px;font-weight:780}.event{padding:12px 0;border-bottom:1px solid var(--l);display:flex;justify-content:space-between}.form{margin-bottom:12px}.form label{display:block;font-size:10px;color:var(--m);margin-bottom:6px}.input{width:100%;padding:13px;border-radius:14px;border:1px solid var(--l);background:#081b14;color:var(--c)}.spec{font-size:10px;color:var(--m);padding:8px 10px;border:1px dashed var(--l);border-radius:10px;margin-top:10px}.splash{display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at 50% 40%,rgba(217,182,111,.14),transparent 29%),#06140f}
+
+.starfield{position:absolute;inset:0;overflow:hidden;pointer-events:none;opacity:.72}
+.star{position:absolute;width:2px;height:2px;background:#f4d995;border-radius:50%;box-shadow:0 0 7px rgba(244,217,149,.8);animation:twinkle 2.8s infinite ease-in-out}
+.star.s1{left:8%;top:14%;animation-delay:.2s}.star.s2{left:18%;top:32%;animation-delay:1s}.star.s3{left:31%;top:12%;animation-delay:1.8s}.star.s4{left:46%;top:24%;animation-delay:.5s}.star.s5{left:62%;top:10%;animation-delay:1.2s}.star.s6{left:74%;top:28%;animation-delay:2s}.star.s7{left:87%;top:15%;animation-delay:.8s}.star.s8{left:92%;top:42%;animation-delay:1.5s}.star.s9{left:12%;top:62%;animation-delay:2.2s}.star.s10{left:38%;top:68%;animation-delay:.9s}.star.s11{left:58%;top:58%;animation-delay:1.7s}.star.s12{left:80%;top:70%;animation-delay:.4s}
+@keyframes twinkle{0%,100%{opacity:.25;transform:scale(.7)}50%{opacity:1;transform:scale(1.5)}}
+.hero-stars{position:relative;background:radial-gradient(circle at 78% 18%,rgba(217,182,111,.18),transparent 24%),linear-gradient(155deg,#102f23,#06150f)}
+.hero-stars:after{content:"☾";position:absolute;right:26px;top:20px;font-size:62px;color:var(--g2);opacity:.9;filter:drop-shadow(0 0 14px rgba(244,217,149,.22))}
+.feature-wide{grid-column:1/-1;min-height:112px;display:flex;flex-direction:row;align-items:center;gap:18px}
+.feature-wide .feature-art{font-size:42px;color:var(--g2);min-width:58px;text-align:center}
+.ar-card{min-height:360px;position:relative;overflow:hidden}
+.ar-frame{height:270px;border-radius:20px;border:1px solid var(--g);position:relative;overflow:hidden;background:radial-gradient(circle at 50% 45%,rgba(217,182,111,.16),transparent 18%),linear-gradient(160deg,#123b2c,#06140f)}
+.ar-frame:before{content:"";position:absolute;inset:18px;border:1px solid rgba(244,217,149,.25);border-radius:16px}
+.ar-target{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:55px;color:var(--g2);filter:drop-shadow(0 0 18px rgba(244,217,149,.5))}
+.ar-cross{position:absolute;left:50%;top:0;bottom:0;width:1px;background:rgba(244,217,149,.3)}.ar-cross:after{content:"";position:absolute;left:-130px;top:50%;width:260px;height:1px;background:rgba(244,217,149,.3)}
+.ar-status{position:absolute;left:14px;right:14px;bottom:14px;display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-radius:13px;background:rgba(3,10,7,.75);backdrop-filter:blur(10px);font-size:10px}
+.toggle{width:46px;height:25px;border-radius:99px;background:#294a3c;padding:3px}.toggle:after{content:"";display:block;width:19px;height:19px;border-radius:50%;background:var(--g2);margin-left:21px}
+.azan-card{display:flex;align-items:center;gap:14px}.azan-icon{font-size:34px;color:var(--g2)}.progress{height:5px;border-radius:99px;background:#173326;overflow:hidden;margin-top:10px}.progress span{display:block;height:100%;width:68%;background:var(--g)}
+.calc-result{font-size:38px;font-weight:800;color:var(--g2);text-align:center;padding:18px}
+.param-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.param{padding:12px;border:1px solid var(--l);border-radius:14px;background:#091c15}.param small{display:block;color:var(--m);font-size:9px}.param b{font-size:14px}
+
+.precision-wrap{display:flex;flex-direction:column;align-items:center;gap:14px}
+.precision-compass{width:300px;height:300px;position:relative;border-radius:50%;display:grid;place-items:center}
+.precision-dial{position:absolute;inset:5px;border-radius:50%;border:1px solid rgba(244,217,149,.5);background:
+radial-gradient(circle at center,rgba(244,217,149,.06) 0 28%,transparent 29%),
+radial-gradient(circle,#12382a 0 56%,#0a2118 57% 72%,#06140f 73%);}
+.precision-dial:before{content:"";position:absolute;inset:15px;border-radius:50%;border:1px solid rgba(244,217,149,.18)}
+.precision-dial:after{content:"";position:absolute;inset:38px;border-radius:50%;border:1px dashed rgba(244,217,149,.16)}
+.tick-ring{position:absolute;inset:5px;border-radius:50%}
+.tick{position:absolute;left:50%;top:0;width:1px;height:10px;background:rgba(244,217,149,.42);transform-origin:50% 145px}
+.tick.major{height:16px;width:2px;background:var(--g)}
+.direction{position:absolute;font-size:12px;font-weight:800;color:var(--g2);z-index:2}
+.direction.n{top:20px}.direction.e{right:20px;top:50%;transform:translateY(-50%)}.direction.s{bottom:20px}.direction.w{left:20px;top:50%;transform:translateY(-50%)}
+.qibla-ray{position:absolute;left:50%;top:50%;height:120px;width:2px;background:linear-gradient(to top,transparent,var(--g2));transform-origin:50% 100%;transform:translate(-50%,-100%) rotate(292.3deg);filter:drop-shadow(0 0 8px rgba(244,217,149,.5));z-index:3}
+.qibla-ray:before{content:"";position:absolute;top:-7px;left:50%;transform:translateX(-50%);width:13px;height:13px;border-radius:50%;background:var(--g2);box-shadow:0 0 16px rgba(244,217,149,.85)}
+.center-kaaba{width:70px;height:70px;border-radius:20px;background:linear-gradient(145deg,#121212,#020202);border:2px solid var(--g);display:grid;place-items:center;color:var(--g2);font-size:29px;z-index:5;box-shadow:0 0 28px rgba(217,182,111,.18)}
+.compass-readout{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;width:100%}
+.readout{padding:11px;border:1px solid var(--l);border-radius:14px;background:#091c15;text-align:center}
+.readout small{display:block;color:var(--m);font-size:8px;text-transform:uppercase;letter-spacing:1px}.readout b{font-size:15px}
+.bearing-main{text-align:center}.bearing-main strong{display:block;font-size:38px;line-height:1;color:var(--g2)}.bearing-main small{color:var(--m);font-size:9px}
+.precision-note{font-size:9px;color:var(--m);text-align:center;line-height:1.5}
+.calibration{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-radius:15px;background:#091c15;border:1px solid var(--l)}
+.status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#d9b66f;box-shadow:0 0 8px rgba(217,182,111,.7);margin-right:6px}
+
+.about-app{
+  margin-top:22px;
+  padding:14px 8px 4px;
+  text-align:center;
+  color:var(--m);
+  font-size:9px;
+  line-height:1.65;
+  opacity:.82;
+}
+.about-app .about-title{
+  color:var(--g);
+  font-size:10px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  margin-bottom:3px;
+}
+.about-app .version{
+  font-size:8px;
+  opacity:.65;
+  margin-top:3px;
+}
+</style></head><body><div class="app">
+
+<section id="splash" class="screen splash"><div><img class="logo large" src="assets/logo.png"><div class="eyebrow">SULAPA FALAK</div><div class="sub">Arah • Waktu • Falak</div><div class="spec">DESIGN 01 — Splash / Entry • Tanpa Login</div></div></section>
+
+<section id="home" class="screen hidden"><div class="top"><div class="brand"><img class="logo small" src="assets/logo.png"><div><div class="eyebrow">Sulapa Falak</div><div class="sub">Arah • Waktu • Falak</div></div></div><span class="badge">26 Sep 2026</span></div>
+<div class="card hero hero-stars"><div class="starfield"><i class="star s1"></i><i class="star s2"></i><i class="star s3"></i><i class="star s4"></i><i class="star s5"></i><i class="star s6"></i><i class="star s7"></i><i class="star s8"></i><i class="star s9"></i><i class="star s10"></i><i class="star s11"></i><i class="star s12"></i></div><div class="moon">☾</div><div class="sub">Assalamu'alaikum</div><div class="clock">04:58</div><div class="location">⌖ Parepare, Sulawesi Selatan</div><div class="next"><div><span class="eyebrow">Sholat berikutnya</span><b>Subuh</b></div><div class="count">00:27:18</div></div></div>
+<div class="prayers"><div class="prayer active"><span>Subuh</span><b>05:25</b></div><div class="prayer"><span>Dzuhur</span><b>12:02</b></div><div class="prayer"><span>Ashar</span><b>15:20</b></div><div class="prayer"><span>Maghrib</span><b>18:03</b></div><div class="prayer"><span>Isya</span><b>19:13</b></div></div>
+<div class="section"><h3>Fitur Utama</h3><span class="badge">Sulapa Eppa</span></div>
+<div class="grid2">
+<div class="card tile" onclick="show('qibla')"><div class="icon">⌁</div><div><b>Arah Kiblat</b><p>Kompas sensor & azimut Ka'bah</p></div></div>
+<div class="card tile" onclick="show('qiblaAR')"><div class="icon">◎</div><div><b>Qibla AR</b><p>Visual arah Ka'bah melalui kamera</p></div></div>
+<div class="card tile" onclick="show('prayer')"><div class="icon">◷</div><div><b>Jadwal Sholat</b><p>Jadwal harian dan bulanan</p></div></div>
+<div class="card tile" onclick="show('azan')"><div class="icon">🔊</div><div><b>Azan & Notifikasi</b><p>Pengingat dan kontrol azan</p></div></div>
+<div class="card tile" onclick="show('calendar')"><div class="icon">☾</div><div><b>Kalender Hijriah</b><p>Masehi, Hijriah & fase bulan</p></div></div>
+<div class="card tile" onclick="show('calculator')"><div class="icon">✦</div><div><b>Calculator Falak</b><p>Hisab, azimut & astronomi</p></div></div>
+<div class="card tile feature-wide" onclick="show('falak')"><div class="feature-art">✧</div><div><b>Laboratorium Ilmu Falak</b><p>Kumpulan kalkulator dan parameter perhitungan untuk eksplorasi astronomi Islam.</p></div></div>
+</div><div class="spec">DESIGN 02 — Home / Dashboard • Starry Islamic Theme</div>
+<div class="about-app">
+  <div class="about-title">Tentang Sulapa Falak</div>
+  Aplikasi ilmu falak bernuansa Bugis-Luwu untuk membantu<br>
+  menentukan arah kiblat, waktu sholat, kalender Hijriah,<br>
+  azan, serta perhitungan astronomi Islam.
+  <div class="version">Sulapa Falak • Arah • Waktu • Falak</div>
+</div>
+</section>
+
+
+<section id="qiblaAR" class="screen hidden">
+  <div class="top"><div><div class="eyebrow">Augmented Reality</div><h1 class="title">Qibla AR</h1></div><span class="badge">Kamera</span></div>
+  <div class="card ar-card">
+    <div class="sub" style="margin-bottom:12px">Arahkan kamera ke lingkungan sekitar untuk menampilkan panduan arah kiblat.</div>
+    <div class="ar-frame">
+      <div class="ar-cross"></div><div class="ar-target">🕋</div>
+      <div class="ar-status"><span>● Sensor aktif</span><span>292,4°</span></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px"><div><b>AR Qibla Guide</b><div class="sub">Kalibrasi kompas sebelum digunakan.</div></div><button class="btn" style="width:auto;padding:10px 14px">Kalibrasi</button></div>
+  </div>
+  <div class="card"><div class="section" style="margin-top:0"><h3>Petunjuk</h3></div><div class="list"><div class="row"><span>1. Izinkan kamera</span><b>✓</b></div><div class="row"><span>2. Kalibrasi sensor</span><b>✓</b></div><div class="row"><span>3. Ikuti penanda Ka'bah</span><b>→</b></div></div></div>
+  <div class="spec">DESIGN 03B — Qibla AR / Camera Overlay</div>
+</section>
+
+<section id="qibla" class="screen hidden">
+  <div class="top">
+    <div><div class="eyebrow">Sulapa Falak</div><h1 class="title">Arah Kiblat</h1></div>
+    <span class="badge">Presisi</span>
+  </div>
+
+  <div class="card center">
+    <div class="sub">Sejajarkan garis emas dengan arah Ka'bah. Utara adalah referensi 0°.</div>
+
+    <div class="precision-wrap" style="margin-top:16px">
+      <div class="precision-compass">
+        <div class="precision-dial"></div>
+        <div class="tick-ring" id="tickRing"></div>
+        <div class="direction n">N</div>
+        <div class="direction e">E</div>
+        <div class="direction s">S</div>
+        <div class="direction w">W</div>
+        <div class="qibla-ray"></div>
+        <div class="center-kaaba">▣</div>
+      </div>
+
+      <div class="compass-readout">
+        <div class="readout"><small>Utara</small><b>0°</b></div>
+        <div class="bearing-main"><strong>292,3°</strong><small>Azimut Kiblat</small></div>
+        <div class="readout"><small>Arah</small><b>BBU</b></div>
+      </div>
+    </div>
+
+    <div class="precision-note" style="margin-top:12px">
+      Bearing dihitung dari utara searah jarum jam. Nilai dapat berubah sesuai koordinat pengguna.
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section" style="margin-top:0"><h3>Data Perhitungan</h3><span class="badge">Geodesik</span></div>
+    <div class="list">
+      <div class="row"><span>Lokasi</span><b>Parepare</b></div>
+      <div class="row"><span>Lintang</span><b>−4,0167°</b></div>
+      <div class="row"><span>Bujur</span><b>119,6236°</b></div>
+      <div class="row"><span>Ka'bah</span><b>21,4225° N</b></div>
+      <div class="row"><span>Jarak</span><b>± 8.302 km</b></div>
+    </div>
+  </div>
+
+  <div class="calibration">
+    <div><span class="status-dot"></span><b>Sensor kompas siap</b><div class="sub">Kalibrasi diperlukan bila heading tidak stabil.</div></div>
+    <button class="btn" style="width:auto;padding:10px 13px">Kalibrasi</button>
+  </div>
+
+  <div class="spec">DESIGN 03 — Precision Qibla Compass • 360° Dial • True Bearing</div>
+</section>
+
+
+<section id="prayer" class="screen hidden"><div class="top"><div><div class="eyebrow">Waktu Ibadah</div><h1 class="title">Jadwal Sholat</h1></div><span class="badge">Hari Ini</span></div><div class="card"><div class="sub">Sabtu, 26 September 2026</div><div class="hijri">10 Rabiul Akhir 1448 H</div><div class="location">⌖ Parepare, Sulawesi Selatan</div></div><div class="list">
+<div class="row"><span>Imsak</span><b>05:15</b></div><div class="row active"><span>Subuh</span><b>05:25</b></div><div class="row"><span>Terbit</span><b>05:41</b></div><div class="row"><span>Dzuhur</span><b>12:02</b></div><div class="row"><span>Ashar</span><b>15:20</b></div><div class="row"><span>Maghrib</span><b>18:03</b></div><div class="row"><span>Isya</span><b>19:13</b></div></div><div class="spec">DESIGN 04 — Prayer Schedule</div></section>
+
+
+<section id="azan" class="screen hidden">
+  <div class="top"><div><div class="eyebrow">Pengingat Ibadah</div><h1 class="title">Azan & Notifikasi</h1></div><span class="badge">Aktif</span></div>
+  <div class="card azan-card"><div class="azan-icon">🔊</div><div style="flex:1"><b>Subuh dalam 00:27:18</b><div class="sub">Azan akan diputar pada waktu Subuh.</div><div class="progress"><span></span></div></div><div class="toggle"></div></div>
+  <div class="section"><h3>Pengaturan Azan</h3></div>
+  <div class="list">
+    <div class="row"><span>Azan Subuh</span><span class="badge">Aktif</span></div>
+    <div class="row"><span>Azan Dzuhur</span><span class="badge">Aktif</span></div>
+    <div class="row"><span>Azan Ashar</span><span class="badge">Aktif</span></div>
+    <div class="row"><span>Azan Maghrib</span><span class="badge">Aktif</span></div>
+    <div class="row"><span>Azan Isya</span><span class="badge">Aktif</span></div>
+  </div>
+  <div class="card"><div class="section" style="margin-top:0"><h3>Suara Azan</h3></div><div class="row"><span>Muadzin pilihan</span><b>Default</b></div><div class="row"><span>Volume</span><b>80%</b></div><div class="row"><span>Mode senyap</span><b>Off</b></div></div>
+  <div class="spec">DESIGN 05 — Azan & Prayer Notifications</div>
+</section>
+<section id="calendar" class="screen hidden"><div class="top"><div><div class="eyebrow">Waktu & Tanggal</div><h1 class="title">Kalender Hijriah</h1></div><span class="badge">1448 H</span></div><div class="card"><div class="eyebrow">Hari Ini</div><div class="hijri">10 Rabiul Akhir 1448 H</div><div class="sub">Sabtu, 26 September 2026</div><div style="font-size:44px;color:var(--g2);margin-top:15px">☾</div></div><div class="card"><div class="calendar-head"><button class="month-btn" onclick="month(-1)">‹</button><div class="month"><strong id="mn">September 2026</strong><small>Rabiul Akhir 1448 H</small></div><button class="month-btn" onclick="month(1)">›</button></div><div id="cal" class="calgrid"></div><button class="btn" style="margin-top:14px" onclick="today()">Kembali ke Hari Ini</button></div><div class="card"><div class="event"><div><b>Hari Besar Islam</b><small class="sub">Penanda pada kalender</small></div><span class="icon">✦</span></div><div class="event"><div><b>Fase Bulan</b><small class="sub">Informasi astronomi</small></div><span class="icon">☾</span></div></div><div class="spec">DESIGN 05 — Hijri Calendar</div></section>
+
+<section id="falak" class="screen hidden"><div class="top"><div><div class="eyebrow">Astronomi Islam</div><h1 class="title">Ilmu Falak</h1></div><span class="badge">Hisab</span></div><div class="card"><div class="sub">Pusat perhitungan astronomi Islam.</div><div class="hijri">Calculator Falak</div><div class="param-grid" style="margin-top:15px"><div class="param"><small>Lintang</small><b>-4,0167°</b></div><div class="param"><small>Bujur</small><b>119,6236°</b></div><div class="param"><small>Subuh</small><b>20°</b></div><div class="param"><small>Isya</small><b>18°</b></div></div></div><div class="grid2"><div class="card tile" onclick="show('azimuth')"><div class="icon">⌁</div><div><b>Azimut Kiblat</b><p>Hitung arah Ka'bah</p></div></div><div class="card tile" onclick="show('sun')"><div class="icon">☼</div><div><b>Waktu Matahari</b><p>Terbit dan terbenam</p></div></div><div class="card tile" onclick="show('moon')"><div class="icon">☾</div><div><b>Fase Bulan</b><p>Informasi fase bulan</p></div></div><div class="card tile"><div class="icon">✦</div><div><b>Hisab Sholat</b><p>Parameter perhitungan</p></div></div></div><div class="spec">DESIGN 06 — Falak Hub</div></section>
+
+
+<section id="calculator" class="screen hidden">
+  <div class="top"><div><div class="eyebrow">Ilmu Falak</div><h1 class="title">Calculator Falak</h1></div><span class="badge">Advanced</span></div>
+  <div class="card">
+    <div class="section" style="margin-top:0"><h3>Pilih Perhitungan</h3></div>
+    <div class="grid2">
+      <div class="card tile" style="margin:0" onclick="show('azimuth')"><div class="icon">⌁</div><div><b>Azimut Kiblat</b><p>Arah Ka'bah</p></div></div>
+      <div class="card tile" style="margin:0" onclick="show('sun')"><div class="icon">☼</div><div><b>Waktu Matahari</b><p>Terbit & terbenam</p></div></div>
+      <div class="card tile" style="margin:0" onclick="show('moon')"><div class="icon">☾</div><div><b>Fase Bulan</b><p>Posisi bulan</p></div></div>
+      <div class="card tile" style="margin:0"><div class="icon">◷</div><div><b>Hisab Sholat</b><p>Waktu sholat</p></div></div>
+    </div>
+  </div>
+  <div class="card"><div class="section" style="margin-top:0"><h3>Parameter Hisab</h3><span class="badge">Kemenag RI</span></div><div class="param-grid"><div class="param"><small>Asar</small><b>Syafi'i</b></div><div class="param"><small>Subuh</small><b>20°</b></div><div class="param"><small>Isya</small><b>18°</b></div><div class="param"><small>Dhuha</small><b>18°</b></div></div></div>
+  <div class="spec">DESIGN 07 — Calculator Falak / Tool Launcher</div>
+</section>
+<section id="azimuth" class="screen hidden"><div class="top"><div><div class="eyebrow">Ilmu Falak</div><h1 class="title">Azimut Kiblat</h1></div></div><div class="card"><div class="form"><label>Lintang lokasi</label><input class="input" value="-4.0167°"></div><div class="form"><label>Bujur lokasi</label><input class="input" value="119.6236°"></div><div class="form"><label>Koordinat Ka'bah</label><input class="input" value="21.4225° N, 39.8262° E"></div><button class="btn" onclick="document.getElementById('az').textContent='292,4°'">Hitung</button></div><div class="card center"><div class="eyebrow">Hasil</div><div id="az" class="result">—</div></div><div class="spec">DESIGN 07 — Falak Calculator / Azimuth</div></section>
+
+<section id="sun" class="screen hidden"><div class="top"><div><div class="eyebrow">Astronomi Matahari</div><h1 class="title">Waktu Matahari</h1></div></div><div class="card center"><div style="font-size:90px;color:var(--g2)">☼</div><div class="hijri">Posisi Matahari</div><div class="sub">Tampilan data matahari untuk ilmu falak.</div></div><div class="list"><div class="row"><span>Terbit</span><b>05:41</b></div><div class="row"><span>Kulminasi</span><b>11:52</b></div><div class="row"><span>Terbenam</span><b>18:03</b></div></div><div class="spec">DESIGN 08 — Solar Position</div></section>
+
+<section id="moon" class="screen hidden"><div class="top"><div><div class="eyebrow">Astronomi Bulan</div><h1 class="title">Fase Bulan</h1></div></div><div class="card center"><div style="font-size:115px;color:var(--g2)">☾</div><div class="hijri">Waxing Crescent</div><div class="sub">Informasi fase bulan untuk kebutuhan falak.</div></div><div class="list"><div class="row"><span>Umur Bulan</span><b>± 4 hari</b></div><div class="row"><span>Iluminasi</span><b>± 18%</b></div></div><div class="spec">DESIGN 09 — Lunar Phase</div></section>
+
+<section id="settings" class="screen hidden"><div class="top"><div><div class="eyebrow">Preferensi</div><h1 class="title">Pengaturan</h1></div></div><div class="card"><div class="section" style="margin-top:0"><h3>Lokasi</h3></div><div class="row"><span>Lokasi saat ini</span><b>Parepare</b></div></div><div class="card"><div class="section" style="margin-top:0"><h3>Perhitungan</h3></div><div class="list"><div class="row"><span>Metode jadwal</span><b>Kemenag RI</b></div><div class="row"><span>Asar</span><b>Syafi'i</b></div><div class="row"><span>Subuh</span><b>20°</b></div><div class="row"><span>Isya</span><b>18°</b></div></div></div><div class="spec">DESIGN 10 — Settings</div></section>
+
+<nav class="bottom"><button class="nav active" onclick="show('home',this)"><i>⌂</i>Beranda</button><button class="nav" onclick="show('qibla',this)"><i>⌁</i>Kiblat</button><button class="nav" onclick="show('prayer',this)"><i>◷</i>Sholat</button><button class="nav" onclick="show('calendar',this)"><i>☾</i>Kalender</button><button class="nav" onclick="show('calculator',this)"><i>✦</i>Falak</button></nav>
+</div>
+<script>
+function show(id,el){document.querySelectorAll('.screen').forEach(x=>x.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('.nav').forEach(x=>x.classList.remove('active'));if(el)el.classList.add('active');window.scrollTo(0,0)}
+setTimeout(()=>{document.getElementById('splash').classList.add('hidden');document.getElementById('home').classList.remove('hidden')},1800);
+const months=["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];let d=new Date(2026,8,1);
+function render(){let y=d.getFullYear(),m=d.getMonth(),g=document.getElementById('cal');document.getElementById('mn').textContent=months[m]+" "+y;g.innerHTML='';["Mg","Sn","Sl","Rb","Km","Jm","Sb"].forEach(x=>{let e=document.createElement('div');e.className='weekday';e.textContent=x;g.appendChild(e)});let f=new Date(y,m,1).getDay(),n=new Date(y,m+1,0).getDate();for(let i=0;i<f;i++){let e=document.createElement('div');e.className='day';g.appendChild(e)}for(let i=1;i<=n;i++){let e=document.createElement('div');e.className='day';if(y==2026&&m==8&&i==26)e.classList.add('today');e.innerHTML='<div class="m">'+i+'</div><div class="h">'+(m==8?(({1:15,2:16,3:17,4:18,5:19,6:20,7:21,8:22,9:23,10:24,11:25,12:26,13:27,14:28,15:29,16:30,17:1,18:2,19:3,20:4,21:5,22:6,23:7,24:8,25:9,26:10,27:11,28:12,29:13,30:14}[i]||'')+' Rb'):'')+'</div>';e.onclick=()=>{document.querySelectorAll('.day').forEach(x=>x.classList.remove('today'));e.classList.add('today')};g.appendChild(e)}}function month(n){d.setMonth(d.getMonth()+n);render()}function today(){d=new Date(2026,8,1);render()}render();
+
+(function(){
+ const ring=document.getElementById('tickRing');
+ if(!ring)return;
+ for(let i=0;i<72;i++){
+   const t=document.createElement('span');
+   t.className='tick'+(i%9===0?' major':'');
+   t.style.transform='translateX(-50%) rotate('+(i*5)+'deg)';
+   ring.appendChild(t);
+ }
+})();
+</script></body></html>
